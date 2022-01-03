@@ -20,4 +20,3 @@ jobs:
       with:
         github_token: ${{ secrets.HOBOX_EXAMPLES_TOKEN }}
         publish_dir: ./react-iframe/build
-        publish_branch: react-iframe
