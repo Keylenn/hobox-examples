@@ -1,14 +1,15 @@
 import React from "react"
-import { Route, Switch } from "react-router-dom"
-import TopCounter from "./components/TopCounter"
-import IframeCounter from "./components/IframeCounter"
+// import { Route, Switch } from "react-router-dom"
+// import TopCounter from "./components/TopCounter"
+// import IframeCounter from "./components/IframeCounter"
 
 import "./App.css"
 
 function App() {
   return (
     <div className="App">
-      <Switch>
+      Hello 👏
+      {/* <Switch>
         <Route path="/" exact>
           <section className="top">
             <div style={{ width: "40%" }}>
@@ -25,7 +26,7 @@ function App() {
         <Route path="/iframe" exact>
           <IframeCounter />
         </Route>
-      </Switch>
+      </Switch> */}
     </div>
   )
 }
