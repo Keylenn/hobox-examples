@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import { Route, Switch } from "react-router-dom"
+import TopCounter from "./components/TopCounter"
+import IframeCounter from "./components/IframeCounter"
+
+import "./App.css"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route path="/" exact>
+          <section className="top">
+            <div style={{ width: "40%" }}>
+              <TopCounter />
+            </div>
+            <iframe
+              style={{ width: "40%" }}
+              src="/#/iframe"
+              title="test"
+              frameBorder="0"
+            ></iframe>
+          </section>
+        </Route>
+        <Route path="/iframe" exact>
+          <IframeCounter />
+        </Route>
+      </Switch>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
