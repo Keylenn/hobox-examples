@@ -16,7 +16,7 @@ function App() {
             </div>
             <iframe
               style={{ width: "40%" }}
-              src="/#/iframe"
+              src="https://keylenn.github.io/hobox-examples/ri/#/iframe"
               title="test"
               frameBorder="0"
             ></iframe>
